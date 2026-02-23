@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Noticias - Villar de Cobeta</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="noticias-page">
+
+<nav class="nav">
+  <a href="web.html">Inicio</a>
+  <a href="historia.html">Historia</a>
+  <a href="fiestas.html">Fiestas</a>
+  <a href="rutas.html">Rutas</a>
+  <a href="galeria.html">Galería</a>
+  <a href="noticias.html">Noticias</a>
+</nav>
+
+<section class="hero hero-small">
+  <header class="header">
+    <h1>Noticias</h1>
+    <p class="subtitle">Actualidad y novedades del pueblo</p>
+  </header>
+</section>
+
+<main class="noticias-page reveal">
+
+  <h2>Últimas publicaciones</h2>
+
+  <div class="noticia-card" id="noticia-10-feb-2026">
+    <div class="noticia-fecha">10 Febrero 2026</div>
+    <h3>Noticia 1</h3>
+    <p>
+      Información de la noticia.
+    </p>
+  </div>
+
+  <div class="noticia-card" id="noticia2">
+    <div class="noticia-fecha">15 Marzo 2026</div>
+    <h3>Noticia 2</h3>
+    <p>
+      Información de la noticia.
+    </p>
+  </div>
+
+  <div class="noticia-card" id="noticia3">
+    <div class="noticia-fecha">1 Abril 2026</div>
+    <h3>Noticia 3</h3>
+    <p>
+      Información de la noticia.
+    </p>
+  </div>
+
+  <div class="noticia-card">
+    <div class="noticia-fecha">20 Abril 2026</div>
+    <h3>Noticia 4</h3>
+    <p>
+      Información de la noticia.
+    </p>
+  </div>
+
+  <div class="noticia-card">
+    <div class="noticia-fecha">1 Mayo 2026</div>
+    <h3>Noticia 5</h3>
+    <p>
+      Información de la noticia.
+    </p>
+  </div>
+</main>
+
+<footer class="footer">
+  <p>© Asociación de Amigos de Villar de Cobeta</p>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const hash = window.location.hash;
+
+  if (hash) {
+    const elemento = document.querySelector(hash);
+
+    if (elemento) {
+      setTimeout(() => {
+        elemento.scrollIntoView({
+          behavior: "smooth",
+          block: "center"
+        });
+      }, 100);
+    }
+  }
+});
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
